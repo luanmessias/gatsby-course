@@ -2,9 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Label Craft`,
     description: `Label Craft is a self-adhesive label manufacturing & packaging company. We supply key industries including Pharmaceutical, Food Nutrition, Cosmetic & IT`,
-    author: `@gatsbyjs`,
+    author: `@luanmessias`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
