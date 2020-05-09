@@ -1,10 +1,15 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
+
+  ${media.lessThan('large')`
+    padding: 1rem 0rem;
+  `}
 `
 
 export const PostTitle = styled.h1`
@@ -12,12 +17,18 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
+  ${media.lessThan('large')`
+    font-size: 3rem;
+  `}
 `
 
 export const PostDescription = styled.h2`
   font-size: 2rem;
   font-weight: 200;
   padding: 0 1.4rem;
+  ${media.lessThan('large')`
+    font-size: 1.5rem;
+  `}
 `
 
 export const PostDate = styled.p`
@@ -47,6 +58,11 @@ export const MainContent = styled.section`
     letter-spacing: 0.069rem;
     padding: 0 1.4rem;
   }
+
+  ${media.lessThan('large')`
+    padding: 1rem 0rem;
+  `}
+
   p {
     margin: 0 auto 1.6rem;
   }

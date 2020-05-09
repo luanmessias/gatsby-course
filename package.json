@@ -32,7 +32,8 @@
     "react-helmet": "^5.2.1",
     "react-instantsearch-dom": "^6.4.0",
     "styled-components": "^5.1.0",
-    "styled-icons": "^10.2.1"
+    "styled-icons": "^10.2.1",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^3.1.2",
@@ -45,6 +46,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev-m": "gatsby develop -H 0.0.0.0 -p 8000",
     "develop:playground": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",

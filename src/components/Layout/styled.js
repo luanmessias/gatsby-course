@@ -1,7 +1,13 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const LayoutWrapper = styled.section`
   display: flex;
+
+  ${media.lessThan('large')`
+    flex-direction: column;
+    padding: 4.125rem 0rem;
+  `}
 `
 
 export const LayoutMain = styled.main`
@@ -13,4 +19,9 @@ export const LayoutMain = styled.main`
   body#grid & {
     grid-template-areas: 'posts' 'pagination';
   }
+
+  ${media.lessThan('large')`
+    position: inherit;
+    padding: 0px;
+  `}
 `
