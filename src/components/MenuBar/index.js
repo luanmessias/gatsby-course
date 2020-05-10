@@ -6,6 +6,7 @@ import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
 import { LightBulb as Light } from '@styled-icons/octicons/LightBulb'
 import { Grid } from '@styled-icons/boxicons-solid/Grid'
 import { ThList as List } from '@styled-icons/typicons/ThList'
+import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
 
@@ -27,12 +28,26 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="voltar para a home">
+        <S.MenuBarLink
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/"
+          title="voltar para a home"
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search/" title="pesquisar">
+        <S.MenuBarLink
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/search/"
+          title="pesquisar"
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
