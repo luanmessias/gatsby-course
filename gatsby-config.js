@@ -7,6 +7,7 @@ module.exports = {
     title: `Luan Messias`,
     description: `Label Craft is a self-adhesive label manufacturing & packaging company. We supply key industries including Pharmaceutical, Food Nutrition, Cosmetic & IT`,
     author: `Front-end developer`,
+    siteUrl: `https://jhondoe.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -18,13 +19,6 @@ module.exports = {
       options: {
         name: `uploads`,
         path: `${__dirname}/static/assets/img`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -72,17 +66,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Luan Messias`,
+        short_name: `Luan Messias`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/assets/img/luan-messias-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
