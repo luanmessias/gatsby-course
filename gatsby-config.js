@@ -7,7 +7,7 @@ module.exports = {
     title: `Luan Messias`,
     description: `Label Craft is a self-adhesive label manufacturing & packaging company. We supply key industries including Pharmaceutical, Food Nutrition, Cosmetic & IT`,
     author: `Front-end developer`,
-    siteUrl: `https://jhondoe.com.br`,
+    siteUrl: `https://gatsbycourse.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
