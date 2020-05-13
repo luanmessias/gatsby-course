@@ -65,5 +65,9 @@ export const MenuBarItem = styled.span`
     width: 3.2rem;
     height: 3.2rem;
     padding: 1rem;
+    
+    &.bt_grid{
+      display: none;
+    }
   `}
 `
