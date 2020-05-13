@@ -40,6 +40,6 @@ export const SidebarLinks = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(toggleMenuBar(''));
+    transform: translateX(-100vw);
   `}
 `
