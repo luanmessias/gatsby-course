@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
+import toggleMenuBar from '../../utils/toggleMenuBar'
 
 export const SidebarWrapper = styled.aside`
   align-items: center;
@@ -24,5 +25,21 @@ export const SidebarWrapper = styled.aside`
     border-bottom: 1px solid var(--borders);
     border-right-width: 0px;
     z-index: 999;
+  `}
+`
+
+export const SidebarLinks = styled.section`
+  ${media.lessThan('large')`
+    background-color: var(--background);
+    position: fixed;
+    top: 4rem;
+    bottom: 4rem;
+    left: 0;
+    height: calc(100vh - 8rem);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(toggleMenuBar(''));
   `}
 `

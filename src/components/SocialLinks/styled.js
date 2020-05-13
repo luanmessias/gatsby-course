@@ -5,7 +5,9 @@ export const SocialIconsWrapper = styled.nav`
   margin: 2rem auto;
   width: 100%;
   ${media.lessThan('large')`
-    display: none;
+    order: 2;
+    vertical-align: baseline;
+    max-width: 300px;
   `}
 `
 export const SocialIconsList = styled.ul`

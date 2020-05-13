@@ -32,8 +32,15 @@ export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
 
+  &.menu {
+    display: none;
+  }
+
   ${media.lessThan('large')`
     flex-direction: row;
+    &.menu{
+      display: block;
+    }
   `}
 `
 

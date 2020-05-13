@@ -4,7 +4,8 @@ import media from 'styled-media-query'
 
 export const MenuLinksWrapper = styled.nav`
   ${media.lessThan('large')`
-    display: none;
+    order: 1;
+    margin: auto;
   `}
 `
 
@@ -29,4 +30,8 @@ export const MenuLinksLink = styled(AniLink)`
   &:hover {
     color: var(--highlight);
   }
+
+  ${media.lessThan('large')`
+    font-size: 2rem;
+  `}
 `

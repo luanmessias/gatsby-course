@@ -6,6 +6,8 @@ import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
 import { LightUp as Light } from '@styled-icons/entypo/LightUp'
 import { Grid } from '@styled-icons/boxicons-solid/Grid'
 import { ThList as List } from '@styled-icons/typicons/ThList'
+import { Menu } from '@styled-icons/evaicons-solid/Menu'
+
 import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
@@ -53,6 +55,13 @@ const MenuBar = () => {
           </S.MenuBarItem>
         </S.MenuBarLink>
       </S.MenuBarGroup>
+
+      <S.MenuBarGroup className="menu">
+        <S.MenuBarItem>
+          <Menu />
+        </S.MenuBarItem>
+      </S.MenuBarGroup>
+
       <S.MenuBarGroup>
         <S.MenuBarItem
           title="Mudar tema"
