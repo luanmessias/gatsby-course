@@ -6,10 +6,10 @@ import MenuLinks from '../MenuLinks'
 
 import * as S from './styled'
 
-const Sidebar = () => (
+const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => (
   <S.SidebarWrapper>
     <Profile />
-    <S.SidebarLinks>
+    <S.SidebarLinks setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen}>
       <SocialLinks />
       <MenuLinks />
     </S.SidebarLinks>

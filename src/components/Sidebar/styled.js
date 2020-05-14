@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import toggleMenuBar from '../../utils/toggleMenuBar'
 
 export const SidebarWrapper = styled.aside`
   align-items: center;
@@ -30,6 +29,7 @@ export const SidebarWrapper = styled.aside`
 
 export const SidebarLinks = styled.section`
   ${media.lessThan('large')`
+    transition: all 0.5s ease 0s;
     background-color: var(--background);
     position: fixed;
     top: 4rem;
@@ -40,6 +40,7 @@ export const SidebarLinks = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(-100vw);
+    transform: ${props =>
+      props.isMenuOpen ? 'translateX(0vw)' : 'translateX(-100vw)'};
   `}
 `

@@ -7,12 +7,13 @@ import { LightUp as Light } from '@styled-icons/entypo/LightUp'
 import { Grid } from '@styled-icons/boxicons-solid/Grid'
 import { ThList as List } from '@styled-icons/typicons/ThList'
 import { Menu } from '@styled-icons/evaicons-solid/Menu'
+import { CloseCircleOutline as Close } from '@styled-icons/evaicons-outline/CloseCircleOutline'
 
 import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
 
-const MenuBar = () => {
+const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
 
@@ -26,6 +27,10 @@ const MenuBar = () => {
     window.__onThemeChange = () => setTheme(window.__theme)
     window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
+
+  const openMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   return (
     <S.MenuBarWrapper>
@@ -57,8 +62,8 @@ const MenuBar = () => {
       </S.MenuBarGroup>
 
       <S.MenuBarGroup className="menu">
-        <S.MenuBarItem>
-          <Menu />
+        <S.MenuBarItem onClick={openMenu}>
+          {!isMenuOpen ? <Menu /> : <Close />}
         </S.MenuBarItem>
       </S.MenuBarGroup>
 
