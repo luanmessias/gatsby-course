@@ -38,18 +38,20 @@ export const SearchWrapper = styled.section`
 
   body#grid & {
     .ais-Hits-list {
-      background-color: var(--borders);
+      /* background-color: var(--borders); */
       border-bottom: 1px solid var(--borders);
       border-top: 1px solid var(--borders);
       display: grid;
       grid-area: card;
-      grid-gap: 1px;
+      grid-gap: 0px;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       margin-top: 2rem;
     }
 
     .ais-Hits-item {
       background-color: var(--background);
+      /* border: 1px solid var(--borders); */
+      box-shadow: 0 0 0 1px var(--borders);
     }
   }
 

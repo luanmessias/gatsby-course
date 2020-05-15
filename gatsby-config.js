@@ -5,7 +5,7 @@ const queries = require('./src/utils/algolia_queries')
 module.exports = {
   siteMetadata: {
     title: `Luan Messias`,
-    description: `Label Craft is a self-adhesive label manufacturing & packaging company. We supply key industries including Pharmaceutical, Food Nutrition, Cosmetic & IT`,
+    description: `Hello, my name is Luan, I'm a Front End developer looking to evolve my skills every day.`,
     author: `Front-end developer`,
     siteUrl: `https://gatsbycourse.netlify.app/`,
   },

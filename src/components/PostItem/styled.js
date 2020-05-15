@@ -12,6 +12,12 @@ export const PostItemLink = styled(AniLink)`
     box-shadow: 0 0 0 1px var(--borders);
   }
 
+  body#grid .ais-Hits-item & {
+    box-shadow: inherit;
+    height: 100%;
+    align-items: baseline;
+  }
+
   &:hover {
     color: var(--highlight);
   }
