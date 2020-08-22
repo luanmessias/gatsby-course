@@ -2,7 +2,6 @@ backend:
   name: github
   repo: luanmessias/gatsby-course
   branch: master # Branch to update (optional; defaults to master)
-  site_domain: https://gatsby-course-luan.netlify.app/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
