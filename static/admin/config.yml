@@ -2,7 +2,7 @@ backend:
   name: github
   repo: luanmessias/gatsby-course
   branch: master # Branch to update (optional; defaults to master)
-  #site_domain:: gatsby-course.luanmessias.com
+  site_domain:: gatsby-course.luanmessias.com
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
